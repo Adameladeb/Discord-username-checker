@@ -93,8 +93,8 @@ init(autoreset=True)
 print(F"{Fore.LIGHTBLUE_EX}Wait for the packages to load...")
 
 init(autoreset=True)
-__version__ = "Author: suegdu DSV 1.9"
-__github__= "https://github.com/suegdu"
+__version__ = "Author: Hermis DSV 1.9"
+__github__= "https://github.com/Passsword1234"
 dir_path = os.path.dirname(os.path.realpath(__file__))
 configur = ConfigParser()
 configur.read(os.path.join(dir_path, f"config.ini"))
@@ -217,7 +217,8 @@ def main():
                                                   {Fore.LIGHTCYAN_EX}Delay: {Fore.YELLOW}{Delay}{Ly}
                                                          
                                                 Support this tool: 
-                                                   {Fore.LIGHTCYAN_EX}paypal.com/paypalme/suegdu{Ly}
+                                                   {Fore.LIGHTCYAN_EX}(Btc) bc1qp4g97gctgy0f8ekrm8kzjhz3p9hgyqryezg9ay{Ly}
+                                                   {Fore.LIGHTCYAN_EX}(Ltc) LSu4vDFWsCKTHP6Fe3BbSMP9wGNHv6gCky{Ly}
 
   Discord Username's availability validator.
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
