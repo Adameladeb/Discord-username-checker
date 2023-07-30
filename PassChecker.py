@@ -1,14 +1,12 @@
-import platform
+import sys
+import os 
 
 def check_replit():
     if "REPLIT_DB_URL" in os.environ:
         print("This script cannot be run on Replit. Exiting.")
         sys.exit()
 
-    if platform.system() == "Linux" and "android" in platform.release().lower():
-        print("This script cannot be run on Android devices. Exiting.")
-        sys.exit()
-
+check_replit()
 
 import subprocess
 
