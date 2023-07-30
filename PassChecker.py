@@ -93,8 +93,8 @@ init(autoreset=True)
 print(F"{Fore.LIGHTBLUE_EX}Wait for the packages to load...")
 
 init(autoreset=True)
-__version__ = "Author: Hermis DSV 1.9"
-__github__= "https://github.com/Passsword1234"
+__version__ = "Author: suegdu DSV 1.9"
+__github__= "https://github.com/suegdu"
 dir_path = os.path.dirname(os.path.realpath(__file__))
 configur = ConfigParser()
 configur.read(os.path.join(dir_path, f"config.ini"))
