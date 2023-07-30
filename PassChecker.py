@@ -7,11 +7,20 @@ def check_replit():
         sys.exit()
 
 check_replit()
+import platform
 
-import subprocess
+def check_platform():
+    current_platform = platform.system()
+    if current_platform == 'Linux' or current_platform == 'Android':
+        print("Sorry, this code does not work on Linux or Android devices.")
+        return False
+    return True
 
-def print_colored(text, color_code):
-    print(f"\033[{color_code}m{text}\033[0m")
+def your_main_function():
+    import subprocess
+
+    def print_colored(text, color_code):
+        print(f"\033[{color_code}m{text}\033[0m")
 
 try:
     import colorama
@@ -19,6 +28,9 @@ except ImportError:
     print_colored("Installing colorama...", "31")
     subprocess.call(["pip", "install", "colorama"])
     print_colored("colorama installed!", "32")
+
+
+
 
 try:
     import requests as list
@@ -448,4 +460,5 @@ class Discord:
                 self.url, json.dumps(data), headers={"Content-Type": "application/json"}
             )
 if __name__ == "__main__":
-    main()
+    if check_platform():
+        your_main_function()
