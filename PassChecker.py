@@ -1,12 +1,11 @@
 import sys
-import os  # Import the 'os' module to use the environment variables.
+import os 
 
 def check_replit():
     if "REPLIT_DB_URL" in os.environ:
         print("This script cannot be run on Replit. Exiting.")
         sys.exit()
 
-# Place the check_replit() function call at the beginning of your script
 check_replit()
 
 import subprocess
@@ -20,11 +19,6 @@ except ImportError:
     print_colored("Installing colorama...", "31")
     subprocess.call(["pip", "install", "colorama"])
     print_colored("colorama installed!", "32")
-
-# Rest of your code follows...
-# ...
-# Your existing code goes here...
-
 
 try:
     import requests as list
