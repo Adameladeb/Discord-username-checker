@@ -1,13 +1,31 @@
+import sys
+import os  # Import the 'os' module to use the environment variables.
+
+def check_replit():
+    if "REPLIT_DB_URL" in os.environ:
+        print("This script cannot be run on Replit. Exiting.")
+        sys.exit()
+
+# Place the check_replit() function call at the beginning of your script
+check_replit()
+
 import subprocess
+
 def print_colored(text, color_code):
     print(f"\033[{color_code}m{text}\033[0m")
+
 try:
     import colorama
 except ImportError:
     print_colored("Installing colorama...", "31")
-    import subprocess
     subprocess.call(["pip", "install", "colorama"])
     print_colored("colorama installed!", "32")
+
+# Rest of your code follows...
+# ...
+# Your existing code goes here...
+
+
 try:
     import requests as list
 except ImportError:
@@ -217,8 +235,7 @@ def main():
                                                   {Fore.LIGHTCYAN_EX}Delay: {Fore.YELLOW}{Delay}{Ly}
                                                          
                                                 Support this tool: 
-                                                   {Fore.LIGHTCYAN_EX}(Btc) bc1qp4g97gctgy0f8ekrm8kzjhz3p9hgyqryezg9ay{Ly}
-                                                   {Fore.LIGHTCYAN_EX}(Ltc) LSu4vDFWsCKTHP6Fe3BbSMP9wGNHv6gCky{Ly}
+                                                   {Fore.LIGHTCYAN_EX}paypal.com/paypalme/suegdu{Ly}
 
   Discord Username's availability validator.
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
