@@ -21,4 +21,4 @@ This diabolical Python script allows you to check the availability of Discord us
       
 ## Credits
 
-The initial inspiration for this wicked script came from <a href="https://github.com/suegdu/Discord-Username-Checker">suegdu</a>**<br>, but I've edit it.
+The initial inspiration for this wicked script came from <a href="https://github.com/suegdu/Discord-Username-Checker">suegdu</a><br>, but I've edit it.
