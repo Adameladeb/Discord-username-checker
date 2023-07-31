@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This diabolical Python script allows you to check the availability of Discord usernames in a multi-threaded manner, supporting proxy usage for added anonymity and speed. The code base was inspired by @suegdu, and we've made it even more malevolent by adding threading and proxy support.
+This diabolical Python script allows you to check the availability of Discord usernames in a multi-threaded manner, supporting proxy usage for added anonymity and speed. The code base was inspired by <a href="https://github.com/suegdu/Discord-Username-Checker">suegdu</a><br>, and we've made it even more malevolent by adding threading and proxy support.
 
 ## Features
 
