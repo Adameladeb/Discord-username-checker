@@ -30,9 +30,6 @@ except ImportError:
     print_colored("colorama installed!", "32")
 
 
-def your_main_function():
-
-
 try:
     import requests as list
 except ImportError:
